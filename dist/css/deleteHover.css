@@ -1,0 +1,7 @@
+table tbody tr td i:hover{
+    color: red;
+}
+
+table tbody tr {
+    cursor: pointer;
+}

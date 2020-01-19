@@ -26,6 +26,11 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link href="dist/css/textBorder.css" rel="stylesheet">
+
+  <link href="dist/css/deleteHover.css" rel="stylesheet" >
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -167,8 +172,8 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Save</button>
-                  <button type="reset" class="btn btn-warning">Clear</button>
+                  <button type="button" class="btn btn-primary" id="btnSubmit">Save</button>
+                  <button type="button" class="btn btn-warning" id="btn-clear">Clear</button>
                 </div>
               </form>
             </div>
@@ -180,11 +185,11 @@
                 <table id="tbl-items" class="table table-hover table-bordered">
                   <thead>
                   <tr>
-                    <th class="text-center">Code</th>
+                    <th>Code</th>
                     <th>Description</th>
                     <th>QTY. On Hand</th>
                     <th>Unit Price (Rs.)</th>
-                    <th></th>
+                    <th class="text-center">Delete</th>
                   </tr>
                   </thead>
                   <tbody>
@@ -254,5 +259,9 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+<!-- load db -->
+<script src="dist/js/db.js"></script>
+<!-- Manage Customer -->
+<script src="dist/js/ManageItemsController.js"></script>
 </body>
 </html>
